@@ -166,3 +166,4 @@ cython_debug/
 *.h5
 *.xdmf
 tpv36_37_small_mesh_test/*
+.DS_Store
