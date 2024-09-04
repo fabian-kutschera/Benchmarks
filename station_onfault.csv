@@ -1,4 +1,4 @@
-Station name,Description,x [km],w [km],y [km],z [km]
+Station name,Description,x [km],w [km],z [km],y [km]
 faultst000dp000,"On fault, 0.0 km along strike, 0.0 km down-dip.",0.0,0.0,0.0,0.0
 faultst000dp010,"On fault, 0.0 km along strike, 1.0 km down-dip.",0.0,1.0,0.25881904510252074,0.9659258262890682
 faultst000dp030,"On fault, 0.0 km along strike, 3.0 km down-dip.",0.0,3.0,0.7764571353075622,2.8977774788672046
