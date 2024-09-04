@@ -43,7 +43,7 @@ gmsh -3 tpv36_37.geo
 Convert the mesh:
 module use /import/exception-dump/ulrich/spack/modules/linux-debian12-zen2
 module load pumgen
-pumgen -s simmodsuite -l /import/freenas-m-05-seissol/jwcwong/LudwigU_2024 tpv36_37.msh -s msh2
+pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37.msh -s msh2
 
  */
 
@@ -53,7 +53,7 @@ pumgen -s simmodsuite -l /import/freenas-m-05-seissol/jwcwong/LudwigU_2024 tpv36
 // The mesh discretisation can be changed within Min and Max values using the Gmsh GUI
 DefineConstant[ h_domain = {5e3, Min 0, Max 500e3, Name "Mesh spacing within model domain" } ];
 // Run these benchmarks using 50 meter resolution on the fault.
-DefineConstant[ h_fault = {500.0, Min 0, Max 30e3, Name "Mesh spacing on the fault" } ];
+DefineConstant[ h_fault = {50.0, Min 0, Max 30e3, Name "Mesh spacing on the fault" } ];
 // The fault is a planar thrust fault that dips at an angle of 15 degrees.
 DefineConstant[ dip = {15, Min 0, Max 90, Name "Fault dip" } ];
 
