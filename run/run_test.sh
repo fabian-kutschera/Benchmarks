@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J TPV36_test
-#SBATCH -o /hppfs/scratch/09/ru64lev2/Samos_Fra_dyn_v2/%x.%j.out
-#SBATCH -e /hppfs/scratch/09/ru64lev2/Samos_Fra_dyn_v2/%x.%j.out
+#SBATCH -o /hppfs/scratch/09/ru64lev2/TPV36/%x.%j.out
+#SBATCH -e /hppfs/scratch/09/ru64lev2/TPV36/%x.%j.out
 
 #Initial working directory:
 #SBATCH --chdir=./
@@ -11,12 +11,13 @@
 #SBATCH --mail-user=f.kutschera@campus.lmu.de
 
 #SBATCH --ear=off
-#SBATCH --time=10:30:00
+#SBATCH --time=00:30:00
 #SBATCH --no-requeue
 #SBATCH --export=ALL
 #SBATCH --account=pn49ha
-#SBATCH --partition=general
-#SBATCH --nodes=128
+#SBATCH --partition=test
+#Some nodes cause problems, try: --partition=test --exclude="i01r01c[01-02]s[01-12]"
+#SBATCH --nodes=16
 #SBATCH --ntasks-per-node=1
 module load slurm_setup
 
