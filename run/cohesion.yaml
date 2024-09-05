@@ -1,0 +1,15 @@
+!Switch
+[cohesion]: !EvalModel
+    parameters: [z]
+    model: !Switch
+        [z]: !FunctionMap
+          map:
+            z: return z;
+    components: !FunctionMap
+       map:
+          cohesion: |
+            w = z/sin(15 * M_PI/180);
+            if (w <= 8000) {
+              return (0.0005)*(8000-w);
+            }
+            return 0.0;
