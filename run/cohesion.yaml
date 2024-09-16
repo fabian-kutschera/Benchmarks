@@ -1,10 +1,5 @@
 !Switch
 [cohesion]: !EvalModel
-    parameters: [z]
-    model: !Switch
-        [z]: !FunctionMap
-          map:
-            z: return z;
     components: !FunctionMap
        map:
           cohesion: |
