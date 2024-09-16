@@ -31,3 +31,8 @@
         T_d = -2120.0 * w;
       }
       end
+[Tnuc_n, Tnuc_s, Tnuc_d]: !ConstantMap
+    map:
+        Tnuc_n: 0
+        Tnuc_s: 0
+        Tnuc_d: 0
