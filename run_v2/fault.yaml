@@ -1,0 +1,36 @@
+!Switch
+[mu_s, mu_d, d_c]: !ConstantMap
+      map:
+        mu_s:        0.575
+        mu_d:        0.450
+        d_c:         0.18
+[forced_rupture_time, cohesion]: !LuaMap
+  returns: [forced_rupture_time, cohesion]
+  function: |
+     function f (x)
+      xh = 0.0
+      yh = 17387.0
+      zh = 4658.0
+      r_crit = 4000.0
+      r = math.sqrt((x["x"]-xh)^2 + (x["y"]-yh)^2 + (x["z"]-zh)^2 )
+      Vs = 3464.0
+      if (r <= r_crit) then
+        forced_rupture_time = r/(0.7*Vs)+(0.081*r_crit/(0.7*Vs))*(1.0/(1.0-(r/r_crit)^2)-1.0)
+      else 
+        forced_rupture_time = 1000000000.0
+      end
+
+      pi = 4.0 * math.atan(1.0);
+      w = x["z"]/sin(15*pi/180.);
+        
+      return {
+        forced_rupture_time = forced_rupture_time,
+        cohesion = 500.0 * max(8000.0-w,0);
+      }
+      end
+[s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]: !Include initial_stress.yaml
+[Tnuc_n, Tnuc_s, Tnuc_d]: !ConstantMap
+    map:
+        Tnuc_n: 0
+        Tnuc_s: 0
+        Tnuc_d: 0
