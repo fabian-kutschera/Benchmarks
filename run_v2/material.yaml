@@ -4,4 +4,3 @@
       rho: 2670
       mu: 32038120320
       lambda: 32043759360
-[s_xx, s_yy, s_zz, s_xy, s_yz, s_xz]: !Include initial_stress.yaml
