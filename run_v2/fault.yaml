@@ -25,7 +25,7 @@
         
       return {
         forced_rupture_time = forced_rupture_time,
-        cohesion = 500.0 * max(8000.0-w,0),
+        cohesion = 500.0 * math.max(8000.0-w,0),
         T_n = 4240.0 * w,
         T_s = -2120.0 * w,
         T_d = -2120.0 * w,
