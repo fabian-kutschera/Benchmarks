@@ -30,7 +30,7 @@
         T_s = -2120.0 * w,
         T_d = -2120.0 * w,
       }
-      end
+     end
 [Tnuc_n, Tnuc_s, Tnuc_d]: !ConstantMap
     map:
         Tnuc_n: 0
