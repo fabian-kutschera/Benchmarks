@@ -12,8 +12,8 @@
         pi = 4.0 * math.atan(1.0);
         w = depth/sin(15*pi/180.);
         return {
-          s_xx = 4240.0*w,
-          s_yy = 4240.0*w,
-          s_xy = -2120.0*w,
+          s_xx = 4240.0*w;
+          s_yy = 4240.0*w;
+          s_xy = -2120.0*w;
         }
       end
