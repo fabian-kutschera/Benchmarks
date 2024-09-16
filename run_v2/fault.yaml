@@ -4,7 +4,7 @@
         mu_s:        0.575
         mu_d:        0.450
         d_c:         0.18
-[forced_rupture_time, cohesion]: !LuaMap
+[forced_rupture_time, cohesion, T_n, T_s, T_d]: !LuaMap
   returns: [forced_rupture_time, cohesion, T_n, T_s, T_d]
   function: |
      function f (x)
