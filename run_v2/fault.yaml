@@ -20,8 +20,8 @@
         forced_rupture_time = 1000000000.0
       end
 
-      pi = 4.0 * math.atan(1.0);
-      w = x["z"]/sin(15.0*pi/180.);
+      pi = 4.0 * math.atan(1.0)
+      w = x["z"]/sin(15.0*pi/180.)
         
       return {
         forced_rupture_time = forced_rupture_time,
