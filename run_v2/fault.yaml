@@ -10,7 +10,7 @@
      function f (x)
       xh = 0.0
       yh = 17387.0
-      zh = 4658.0
+      zh = -4658.0
       r_crit = 4000.0
       r = math.sqrt((x["x"]-xh)^2 + (x["y"]-yh)^2 + (x["z"]-zh)^2 )
       Vs = 3464.0
