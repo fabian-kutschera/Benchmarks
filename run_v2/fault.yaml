@@ -25,10 +25,10 @@
         
       return {
         forced_rupture_time = forced_rupture_time,
-        cohesion = 500.0 * max(8000.0-w,0);
-        T_n = 4240.0 * w;
-        T_s = -2120.0 * w;
-        T_d = -2120.0 * w;
+        cohesion = 500.0 * max(8000.0-w,0),
+        T_n = 4240.0 * w,
+        T_s = -2120.0 * w,
+        T_d = -2120.0 * w,
       }
       end
 [Tnuc_n, Tnuc_s, Tnuc_d]: !ConstantMap
