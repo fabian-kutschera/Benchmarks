@@ -1,0 +1,23 @@
+Station name,Description,x [m],y [m],z [m],w [m]
+faultst000dp000,"On fault, 0.0 km along strike, 0.0 km down-dip.",0.0,0.0,-0.0,0.0
+faultst000dp010,"On fault, 0.0 km along strike, 1.0 km down-dip.",0.0,965.9258262890684,-258.81904510252076,1000.0
+faultst000dp030,"On fault, 0.0 km along strike, 3.0 km down-dip.",0.0,2897.7774788672045,-776.4571353075622,3000.0
+faultst000dp060,"On fault, 0.0 km along strike, 6.0 km down-dip.",0.0,5795.554957734409,-1552.9142706151245,6000.0
+faultst000dp120,"On fault, 0.0 km along strike, 12.0 km down-dip.",0.0,11591.109915468818,-3105.828541230249,12000.0
+faultst000dp180,"On fault, 0.0 km along strike, 18.0 km down-dip.",0.0,17386.66487320323,-4658.742811845374,18000.0
+faultst000dp240,"On fault, 0.0 km along strike, 24.0 km down-dip.",0.0,23182.219830937636,-6211.657082460498,24000.0
+faultst040dp000,"On fault, 4.0 km along strike, 0.0 km down-dip.",4000.0,0.0,-0.0,0.0
+faultst040dp030,"On fault, 4.0 km along strike, 3.0 km down-dip.",4000.0,2897.7774788672045,-776.4571353075622,3000.0
+faultst040dp060,"On fault, 4.0 km along strike, 6.0 km down-dip.",4000.0,5795.554957734409,-1552.9142706151245,6000.0
+faultst040dp120,"On fault, 4.0 km along strike, 12.0 km down-dip.",4000.0,11591.109915468818,-3105.828541230249,12000.0
+faultst040dp180,"On fault, 4.0 km along strike, 18.0 km down-dip.",4000.0,17386.66487320323,-4658.742811845374,18000.0
+faultst080dp000,"On fault, 8.0 km along strike, 0.0 km down-dip.",8000.0,0.0,-0.0,0.0
+faultst080dp030,"On fault, 8.0 km along strike, 3.0 km down-dip.",8000.0,2897.7774788672045,-776.4571353075622,3000.0
+faultst080dp060,"On fault, 8.0 km along strike, 6.0 km down-dip.",8000.0,5795.554957734409,-1552.9142706151245,6000.0
+faultst080dp120,"On fault, 8.0 km along strike, 12.0 km down-dip.",8000.0,11591.109915468818,-3105.828541230249,12000.0
+faultst080dp180,"On fault, 8.0 km along strike, 18.0 km down-dip.",8000.0,17386.66487320323,-4658.742811845374,18000.0
+faultst120dp000,"On fault, 12.0 km along strike, 0.0 km down-dip.",12000.0,0.0,-0.0,0.0
+faultst120dp030,"On fault, 12.0 km along strike, 3.0 km down-dip.",12000.0,2897.7774788672045,-776.4571353075622,3000.0
+faultst120dp060,"On fault, 12.0 km along strike, 6.0 km down-dip.",12000.0,5795.554957734409,-1552.9142706151245,6000.0
+faultst120dp120,"On fault, 12.0 km along strike, 12.0 km down-dip.",12000.0,11591.109915468818,-3105.828541230249,12000.0
+faultst120dp180,"On fault, 12.0 km along strike, 18.0 km down-dip.",12000.0,17386.66487320323,-4658.742811845374,18000.0
