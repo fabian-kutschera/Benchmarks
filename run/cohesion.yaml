@@ -1,8 +1,0 @@
-!Switch
-[cohesion]: !EvalModel
-    components: !FunctionMap
-       map:
-          cohesion: |
-            pi = 4.0 * math.atan(1.0);
-            w = z/sin(15*pi/180.);
-            return 500.0 * max(8000.0-w,0);
