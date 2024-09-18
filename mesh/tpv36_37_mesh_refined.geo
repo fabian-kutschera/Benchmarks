@@ -1,3 +1,52 @@
+/*
+/**
+ * @file
+ * This file is part of SeisSol.
+ *
+ * @author Fabian Kutschera, adapted from https://github.com/SeisSol/Training/tree/main/tpv13
+ *
+ * @section LICENSE
+ * Copyright (c) 2014-2024, SeisSol Group
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 
+ * 3. Neither the name of the copyright holder nor the names of its
+ *    contributors may be used to endorse or promote products derived from this
+ *    software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ 
+
+Creates the mesh for tpv36 and tpv37, 15 degree shallow dip thrust fault
+For more information see https://strike.scec.org/cvws/tpv36_37docs.html
+Obtain the mesh (gmsh 4.12.2):
+gmsh -3 tpv36_37_mesh_refined.geo
+Convert the mesh:
+module use /import/exception-dump/ulrich/spack/modules/linux-debian12-zen2
+module load pumgen
+pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_refined.msh -s msh2
+
+ */
+
 // Definition of the default mesh discretisation and dip of the fault. 
 // The fault here is set to require smaller elements than the volume. 
 // This will lead to a statically refined mesh. 
