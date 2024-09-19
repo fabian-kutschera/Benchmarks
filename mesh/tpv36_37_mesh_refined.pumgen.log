@@ -1,0 +1,17 @@
+Fri Sep 20 01:39:04, Info:  No filtering enabled (contiguous storage) 
+Fri Sep 20 01:39:04, Info:  Using 32-bit integer boundary type conditions, or 8 bit per face (i32). 
+Fri Sep 20 01:39:04, Info:  Using GMSH mesh format 2 (msh2) mesh 
+Fri Sep 20 01:39:24, Info:  Read vertex coordinates 
+Fri Sep 20 01:39:24, Info:  Read cell vertices 
+Fri Sep 20 01:39:24, Info:  Read cell groups 
+Fri Sep 20 01:39:24, Info:  Read boundary conditions 
+Fri Sep 20 01:39:24, Info:  Parsed mesh successfully, writing output... 
+Fri Sep 20 01:39:24, Info:  Total cell count: 9269456 
+Fri Sep 20 01:39:24, Info:  Total vertex count: 1872634 
+Fri Sep 20 01:39:26, Info:  Minimum insphere found: 10.0441 
+Fri Sep 20 01:39:27, Info:  Writing cells 
+Fri Sep 20 01:39:31, Info:  Writing vertices 
+Fri Sep 20 01:39:31, Info:  Writing group information 
+Fri Sep 20 01:39:32, Info:  Writing boundary condition 
+Fri Sep 20 01:39:33, Info:  Writing XDMF file 
+Fri Sep 20 01:39:33, Info:  Finished successfully 
