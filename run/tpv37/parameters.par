@@ -53,7 +53,7 @@ PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receiv
 /
             
 &MeshNml
-MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_training_refined.puml.h5'
+MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
 meshgenerator = 'PUML'                         ! Name of meshgenerator (Gambit3D-fast, Netcdf or PUML)
 /
 
