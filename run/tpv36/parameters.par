@@ -80,7 +80,7 @@ SurfaceOutputInterval = 2.0
 pickdt = 0.005                       ! Pickpoint Sampling
 RFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/offfault_receivers.dat'      ! Record Points in extra file
 
-xdmfWriterBackend = 'hdf5' ! (optional) The backend used in fault, wavefield,
+xdmfWriterBackend = 'posix' ! (optional) The backend used in fault, wavefield,
 ! and free-surface output. The HDF5 backend is only supported when SeisSol is compiled with
 ! HDF5 support.
 
