@@ -54,7 +54,6 @@ PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receiv
             
 &MeshNml
 MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
-!MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_training_small.puml.h5'
 meshgenerator = 'PUML'                         ! Name of meshgenerator (Gambit3D-fast, Netcdf or PUML)
 /
 
@@ -64,7 +63,7 @@ ClusteredLTS = 2                               ! Enable local time-stepping
 /
 
 &Output
-OutputFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/output/tpv36'
+OutputFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/output/tpv36/tpv36'
 Format = 6                                     ! Format (10=no output, 6=hdf5 output)
 !             |stress     |vel
 iOutputMask = 0 0 0 0 0 0 1 1 1
@@ -93,7 +92,7 @@ Checkpoint = 0
 /
 
 &AbortCriteria
-EndTime = 4.0 !22.0
+EndTime = 22.0
 /
 
 &Analysis
