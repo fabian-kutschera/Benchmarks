@@ -44,7 +44,7 @@ printtimeinterval = 1       ! Index of printed info at timesteps
 OutputMask = 1 1 1 1 1 1 1 1 1 1 1 1        ! turn on and off fault outputs
 nOutpoints = 22
 !pickdt = 0.005 ! not sure if this matters here
-PPFileName = 'onfault_receivers.dat'
+PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receivers.dat'
 /
 
 &SourceType
@@ -54,7 +54,7 @@ PPFileName = 'onfault_receivers.dat'
 /
             
 &MeshNml
-MeshFile = 'tpv36_37_mesh_training_small.puml.h5'
+MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_training_refined.puml.h5'
 meshgenerator = 'PUML'                         ! Name of meshgenerator (Gambit3D-fast, Netcdf or PUML)
 /
 
@@ -79,7 +79,7 @@ SurfaceOutputRefinement = 1
 SurfaceOutputInterval = 2.0
 
 pickdt = 0.005                       ! Pickpoint Sampling
-RFileName = 'offfault_receivers.dat'      ! Record Points in extra file
+RFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/offfault_receivers.dat'      ! Record Points in extra file
 
 xdmfWriterBackend = 'hdf5' ! (optional) The backend used in fault, wavefield,
 ! and free-surface output. The HDF5 backend is only supported when SeisSol is compiled with
@@ -93,7 +93,7 @@ Checkpoint = 0
 /
 
 &AbortCriteria
-EndTime = 2.0 ! 22.0
+EndTime = 22.0
 /
 
 &Analysis
