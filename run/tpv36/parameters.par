@@ -12,7 +12,6 @@ Plasticity = 0
 &DynamicRupture
 ! linear slip-weakening friction
 FL = 16                                        ! Friction law  
-etahack = 0.9
 ! See https://github.com/SeisSol/SeisSol/issues/546
 !yaml file defining spatial dependence of fault properties
 ModelFileName = 'fault.yaml'
@@ -25,6 +24,8 @@ XRef = 0.0
 YRef = -1.0
 ZRef = 0.0
 refPointMethod = 1
+
+etahack = 0.9                 ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
 
 OutputPointType = 5                            ! Type (0: no output, 3: ascii file, 4: paraview file, 5: 3+4)
 SlipRateOutputType=1        ! 0: (smoother) slip rate output evaluated from the difference between the velocity on both side of the fault
@@ -94,7 +95,7 @@ Checkpoint = 0
 /
 
 &AbortCriteria
-EndTime = 22.0
+EndTime = 4.0
 /
 
 &Analysis
