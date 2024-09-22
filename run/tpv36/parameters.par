@@ -12,6 +12,8 @@ Plasticity = 0
 &DynamicRupture
 ! linear slip-weakening friction
 FL = 16                                        ! Friction law  
+etahack = 0.9
+! See https://github.com/SeisSol/SeisSol/issues/546
 !yaml file defining spatial dependence of fault properties
 ModelFileName = 'fault.yaml'
 
