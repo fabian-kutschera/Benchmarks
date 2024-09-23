@@ -25,8 +25,6 @@ YRef = -1.0
 ZRef = 0.0
 refPointMethod = 1
 
-etahack = 0.9                 ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
-
 OutputPointType = 5                            ! Type (0: no output, 3: ascii file, 4: paraview file, 5: 3+4)
 SlipRateOutputType=1        ! 0: (smoother) slip rate output evaluated from the difference between the velocity on both side of the fault
                             ! 1: slip rate output evaluated from the fault tractions and the failure criterion (less smooth but usually more accurate where the rupture front is well developped)
@@ -56,8 +54,10 @@ PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receiv
 /
             
 &MeshNml
-MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
+!MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
+MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_400m.puml.h5'
 meshgenerator = 'PUML'                         ! Name of meshgenerator (Gambit3D-fast, Netcdf or PUML)
+pumlboundaryformat='i32'
 /
 
 &Discretization
@@ -74,6 +74,9 @@ iOutputMask = 0 0 0 0 0 0 1 1 1
 iPlasticityMask = 0 0 0 0 0 0 1
 TimeInterval =  4.                           ! Index of printed info at time
 refinement = 1
+
+! Der "etahack" wird momentan in der Output-Sektion erwartet (nicht in der DR-Sektion).
+etahack = 0.8                 ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
 
 ! Free surface output
 SurfaceOutput = 1
@@ -95,7 +98,7 @@ Checkpoint = 0
 /
 
 &AbortCriteria
-EndTime = 4.0
+EndTime = 22.0
 /
 
 &Analysis
