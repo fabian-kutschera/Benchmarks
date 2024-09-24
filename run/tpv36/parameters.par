@@ -43,7 +43,7 @@ refinement = 1
 &Pickpoint
 printtimeinterval = 1       ! Index of printed info at timesteps
 OutputMask = 1 1 1 1 1 1 1 1 1 1 1 1        ! turn on and off fault outputs
-!pickdt = 0.005 ! not sure if this matters here
+!pickdt = 0.005 ! not yet implemented
 PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receivers.dat'
 /
 
@@ -54,10 +54,9 @@ PPFileName = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/Benchmarks/onfault_receiv
 /
             
 &MeshNml
-!MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
-MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_training_small.puml.h5'
+MeshFile = '/hppfs/work/pn49ha/ru64lev2/Benchmarking/mesh/tpv36_37_mesh_refined.puml.h5'
 meshgenerator = 'PUML'                         ! Name of meshgenerator (Gambit3D-fast, Netcdf or PUML)
-pumlboundaryformat='i32'
+pumlboundaryformat='i32'                       ! Due to bug
 /
 
 &Discretization
@@ -76,7 +75,7 @@ TimeInterval =  4.                           ! Index of printed info at time
 refinement = 1
 
 ! Der "etahack" wird momentan in der Output-Sektion erwartet (nicht in der DR-Sektion).
-etahack = 1.00 !0.95                 ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
+etahack = 0.95 !1.00 is default      ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
 
 ! Free surface output
 SurfaceOutput = 1
