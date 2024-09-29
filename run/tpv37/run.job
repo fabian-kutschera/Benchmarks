@@ -45,6 +45,6 @@ cat material.yaml
 cat fault.yaml
 ulimit -Ss 2097152
 
-mpiexec -n $SLURM_NTASKS /hppfs/work/pn49ha/ru64lev2/Benchmarking/v1.1.3/SeisSol/build-release/SeisSol_Release_dskx_4_elastic parameters.par
+mpiexec -n $SLURM_NTASKS /hppfs/work/pn49ha/ru64lev2/Benchmarking/v1.1.4/SeisSol/build-release/SeisSol_Release_dskx_4_elastic parameters.par
+#mpiexec -n $SLURM_NTASKS /hppfs/work/pn49ha/ru64lev2/Benchmarking/v1.1.3/SeisSol/build-release/SeisSol_Release_dskx_4_elastic parameters.par
 #mpiexec -n $SLURM_NTASKS /hppfs/work/pn49ha/ru64lev2/Benchmarking/SeisSol/build-release/SeisSol_Release_dskx_4_elastic parameters.par
-#mpiexec -n $SLURM_NTASKS /hppfs/work/pn49ha/ru64lev2/Benchmarking/SeisSol/build-release/SeisSol_Release_dskx_5_elastic parameters.par
