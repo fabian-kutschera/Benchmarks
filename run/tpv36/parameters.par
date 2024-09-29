@@ -75,7 +75,7 @@ TimeInterval =  4.                           ! Index of printed info at time
 refinement = 1
 
 ! Der "etahack" wird momentan in der Output-Sektion erwartet (nicht in der DR-Sektion).
-etahack = 0.8 !1.00 is default      ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
+etahack = 1.0 !1.00 is default      ! use any value smaller than one to mitigate quasi-divergent solutions in friction laws
 
 ! Free surface output
 SurfaceOutput = 1
