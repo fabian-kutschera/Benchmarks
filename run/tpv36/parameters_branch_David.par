@@ -4,7 +4,7 @@ MaterialFileName = 'material.yaml'
 !enable off-fault plasticity (ignored in Plasticity=0)
 Plasticity = 0
 !Tv = 0.03
-numflux = 'godunov' ! The numerical flux near the fault. Values: 'godunov', 'rusanov'
+numflux = 'rusanov' ! The numerical flux near the fault. Values: 'godunov', 'rusanov'
 numfluxnearfault = 'rusanov' ! The numerical flux near the fault (on cells which have at least one DR face). Values: 'godunov', 'rusanov'
 /
 
