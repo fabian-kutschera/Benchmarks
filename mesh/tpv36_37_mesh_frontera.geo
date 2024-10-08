@@ -39,11 +39,11 @@
 Creates the mesh for tpv36 and tpv37, 15 degree shallow dip thrust fault
 For more information see https://strike.scec.org/cvws/tpv36_37docs.html
 Obtain the mesh (gmsh 4.12.2):
-gmsh -3 tpv36_37_mesh_50m.geo
+gmsh -3 tpv36_37_mesh_frontera.geo
 Convert the mesh:
 module use /import/exception-dump/ulrich/spack/modules/linux-debian12-zen2
 module load pumgen
-pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_50m.msh -s msh2
+pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_frontera.msh -s msh2
 
  */
 
@@ -52,7 +52,7 @@ pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_50m.msh -s msh2
 // This will lead to a statically refined mesh. 
 // The mesh discretisation can be changed within Min and Max values using the Gmsh GUI
 
-DefineConstant[ h_domain = {5e3, Min 0, Max 500e3, Name "Mesh spacing within model domain" } ];
+DefineConstant[ h_domain = {15e3, Min 0, Max 500e3, Name "Mesh spacing within model domain" } ];
 
 // Run these benchmarks using 50 meter resolution on the fault.
 DefineConstant[ h_fault = {50.0, Min 0, Max 30e3, Name "Mesh spacing on the fault" } ];
@@ -72,18 +72,11 @@ w_f = 28e3;
 dip_rad = (180-dip)*Pi/180.;
 
 // Domain size: see sketch (and note different coordinate axis [x,y,z] convention cf. benchmark description [x,z,y])
-// Initial tests - see Docker
-X0 = -30e3; //-80e3;
+X0 = -80e3;
 X1 = -X0;
-Y0 = -15e3; //-70e3;
-Y1 = 53e3; //90e3;
-Z0 = -40e3; //-60e3;
-// Final domain size (later filterd with OutputRegionBounds)
-//X0 = -80e3;
-//X1 = -X0;
-//Y0 = -70e3;
-//Y1 = 90e3;
-//Z0 = -60e3;
+Y0 = -70e3;
+Y1 = 90e3;
+Z0 = -60e3;
 
 // Create the domain as a box
 domain = newv; Box(domain) = {X0, Y0, Z0, X1-X0, Y1-Y0, -Z0};
