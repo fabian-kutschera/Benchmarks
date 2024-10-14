@@ -1,0 +1,36 @@
+Info    : Running 'gmsh -3 tpv36_37_mesh_frontera_50m.geo' [Gmsh 4.12.2, 1 node, max. 1 thread]
+Info    : Started on Wed Oct  9 20:31:54 2024
+Info    : Reading 'tpv36_37_mesh_frontera_50m.geo'...
+Info    : Done reading 'tpv36_37_mesh_frontera_50m.geo'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 13 (Line)
+Info    : [ 10%] Meshing curve 14 (Line)
+Info    : [ 20%] Meshing curve 15 (Line)
+Info    : [ 20%] Meshing curve 16 (Line)
+Info    : [ 30%] Meshing curve 17 (Line)
+Info    : [ 40%] Meshing curve 18 (Line)
+Info    : [ 40%] Meshing curve 19 (Line)
+Info    : [ 50%] Meshing curve 20 (Line)
+Info    : [ 50%] Meshing curve 21 (Line)
+Info    : [ 60%] Meshing curve 22 (Line)
+Info    : [ 70%] Meshing curve 23 (Line)
+Info    : [ 70%] Meshing curve 24 (Line)
+Info    : [ 80%] Meshing curve 25 (Line)
+Info    : [ 90%] Meshing curve 26 (Line)
+Info    : [ 90%] Meshing curve 27 (Line)
+Info    : [100%] Meshing curve 28 (Line)
+Info    : Done meshing 1D (Wall 0.0525036s, CPU 0.037842s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 13 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 14 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 15 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 16 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 17 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 18 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 19 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 1328.55s, CPU 1313.8s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Tetrahedrizing 12287625 nodes...
+Info    : Done tetrahedrizing 12287633 nodes (Wall 16816.7s, CPU 16757.4s)
+Info    : Reconstructing mesh...

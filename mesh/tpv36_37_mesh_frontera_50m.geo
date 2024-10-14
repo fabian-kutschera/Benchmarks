@@ -39,11 +39,11 @@
 Creates the mesh for tpv36 and tpv37, 15 degree shallow dip thrust fault
 For more information see https://strike.scec.org/cvws/tpv36_37docs.html
 Obtain the mesh (gmsh 4.12.2):
-gmsh -3 tpv36_37_mesh_frontera.geo
+gmsh -3 tpv36_37_mesh_frontera_50m.geo
 Convert the mesh:
 module use /import/exception-dump/ulrich/spack/modules/linux-debian12-zen2
 module load pumgen
-pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_frontera.msh -s msh2
+pumgen -s simmodsuite -l ../LudwigU_2024 tpv36_37_mesh_frontera_50m.msh -s msh2
 
  */
 
