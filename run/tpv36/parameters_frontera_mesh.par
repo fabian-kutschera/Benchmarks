@@ -100,7 +100,7 @@ Checkpoint = 0
 /
 
 &AbortCriteria
-EndTime = 22.0
+EndTime = 2.0
 /
 
 &Analysis

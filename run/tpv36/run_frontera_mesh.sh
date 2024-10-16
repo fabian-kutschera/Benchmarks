@@ -4,9 +4,9 @@
 #SBATCH -e /hppfs/work/pn49ha/ru64lev2/Benchmarking/output/tpv36/%A_%x.err
 
 #SBATCH --account=pn49ha
-#SBATCH --partition=test
-#SBATCH --nodes=16
-#SBATCH --time=00:30:00
+#SBATCH --partition=general
+#SBATCH --nodes=64
+#SBATCH --time=01:00:00
 
 #SBATCH --ntasks-per-node=1
 #SBATCH --no-requeue
